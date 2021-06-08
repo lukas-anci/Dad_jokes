@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.jokes-container {
+  width: 60%;
+  border: 1px solid #000;
+  border-radius: 1em;
+  padding: 1em;
+  box-shadow: 10px 10px 20px rgb(176, 176, 176);
+}
+
+.cat {
+  text-align: right;
+}
+
+.punchline {
+  transform: rotateY(90deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+.punchline.open {
+  transform: rotateY(0deg);
+}
